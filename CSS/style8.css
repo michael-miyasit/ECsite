@@ -1,0 +1,123 @@
+
+/* common */
+body,h1,p,h2 {
+  margin: 0;
+}
+img{
+  vertical-align: bottom;
+}
+
+/* section {
+  cursor: pointer;
+} */
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity .3s;
+}
+
+a:hover{
+  opacity: .5;
+}
+
+
+
+/* header */
+header{
+  background: hsl(0, 0%, 90%);
+  /* height: 200px; */
+  /* display: flex;
+  justify-items: center; */
+}
+
+header .container{
+  width: 400px;
+  margin: 0 auto;
+  /* outline: 3px blue solid; */
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+
+header h1 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+header ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+header ul li + li{
+  margin-left: 20px; 
+}
+
+header .container div + div {
+  margin-left: 20px;
+}
+
+.icon {
+  border-radius: 50%;
+}
+
+/* main */
+
+main .container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main h1 {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 60px 0;
+}
+
+main h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+main p {
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+main section + section{
+  margin-top: 60px;
+}
+
+section
+
+/* footer */
+
+footer {
+  padding: 60px 0;
+  color: #aaa;
+  text-align: center;
+}
+
+/* animation */
+
+.animate {
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+}
+.animate.sfl {
+  transform: translateX(-40px);
+}
+.animate.sfr {
+  transform: translateX(40px);
+}
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
