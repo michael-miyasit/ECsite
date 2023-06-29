@@ -6,18 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOTTON - 目黒のアンティーク家具専門店</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="CSS/styles.css">
-  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="icon" href="asset/img/favicon.png">
+
+  <!-- slick -->
+  <!-- css -->
+<link rel="stylesheet" href=".//asset/js/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" href="./asset/js/slick-1.8.1/slick/slick-theme.css">
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./asset/js/slick-1.8.1/slick/slick.min.js"></script>
+
+<!-- font -->
+<script src="https://kit.fontawesome.com/ce19639fb2.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body class="ecsite">
 
-  <header>
+  <header id="header" class="header">
 
 
-    <div class="container">
-      <a href="index.html">
-        <h1><img src="img/logo.png" alt="BOTTON" width="168" height="48" ></h1>
-      </a> 
+    <div class="header__wrap">
+      <div class="logo">
+        DEMO
+      </div> 
       <form action="">
         <input type="text" name="" id="">
         <button><i class="bi bi-search"></i></button>
@@ -37,61 +49,1037 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
 
-    <img src="img/hero1.png" alt="素敵なソファ" width="calc(100% - 36)"  class="current">
-    <img src="img/hero2.png" alt="素敵な黒いソファ" width="calc(100% - 36)">
-    <img src="img/hero3.png" alt="素敵な2つソファ" width="calc(100% - 36)" >
+    <img src="asset/img/male_01.png" alt="素敵なソファ" width="calc(100% - 36)"  class="current">
+    <img src="asset/img/female_05.png" alt="素敵な黒いソファ" width="calc(100% - 36)">
+    <img src="asset/img/male_06.png" alt="素敵な2つソファ" width="calc(100% - 36)" >
   </section>
 
-  <section class="products">
+  <section class="products" id="products">
 
     <div class="container">
       <h1>OUR ITEMS</h1>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/pic1.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
+      <ul class="products__wrapper">
+
+
+
+
+
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal1">
+            <img src="asset/img/female_01.png" alt="服の写真">
+            <h2>かわいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+                  <!-- <img src="asset/img/pic1.png" alt="素敵な家具"> -->
+
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_01.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_02.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かわいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </li>
-        <li>
-          <a href="#">
-            <img src="img/pic2.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal2">
+            <img src="asset/img/female_03.png" alt="服の写真">
+            <h2>かわいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+                  <!-- <img src="asset/img/pic1.png" alt="素敵な家具"> -->
+
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_03.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_04.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かわいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </li>
-        <li>
-          <a href="#">
-            <img src="img/pic3.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal3">
+            <img src="asset/img/female_05.png" alt="服の写真">
+            <h2>かわいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+                  <!-- <img src="asset/img/pic1.png" alt="素敵な家具"> -->
+
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_05.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_06.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かわいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </li>
-        <li>
-          <a href="#">
-            <img src="img/pic4.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal4">
+            <img src="asset/img/female_07.png" alt="服の写真">
+            <h2>かわいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+                  <!-- <img src="asset/img/pic1.png" alt="素敵な家具"> -->
+
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_07.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_08.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かわいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </li>
-        <li>
-          <a href="#">
-            <img src="img/pic5.png" alt="素敵な家具">
-            <h2>素敵な家具</h2>
-            <p>20,000円</p>
-          </a>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal5">
+            <img src="asset/img/female_09.png" alt="服の写真">
+            <h2>かわいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal5" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+                  <!-- <img src="asset/img/pic1.png" alt="素敵な家具"> -->
+
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_09.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/female_10.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かわいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </li>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal6">
+            <img src="asset/img/male_01.png" alt="服の写真">
+            <h2>かっこいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_01.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_02.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かっこいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal7">
+            <img src="asset/img/male_03.png" alt="服の写真">
+            <h2>かっこいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal7" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_03.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_04.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かっこいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal8">
+            <img src="asset/img/male_05.png" alt="服の写真">
+            <h2>かっこいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal8" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_05.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_06.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かっこいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal9">
+            <img src="asset/img/male_07.png" alt="服の写真">
+            <h2>かっこいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal9" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_07.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_08.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かっこいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="products__content">
+          <button class="modalButton" data-modal="modal10">
+            <img src="asset/img/male_09.png" alt="服の写真">
+            <h2>かっこいい服</h2>
+            <p>￥３５００</p>
+          </button>
+
+          <div id="modal10" class="modal">
+            <div class="modal-content">
+
+              <div class="modal-content_flex">
+
+                <div class="modal-content_left">
+
+                  <ul id="slider" class="modal-content_productSlider">
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_09.png" alt="ECサイト">
+                    </li>
+                    <li class="modal-content_productImage">
+                        <img src="asset/img/male_10.png" alt="ECサイト">
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="modal-content_right">
+                  <span class="close">&times;</span>
+                  <div class="modal-content_productName">かっこいい服</div>
+                  <div class="modal-content_productPrice">￥３５００</div>
+                  <div class="modal-content_productBuy">購入する</div>
+                  <div class="modal-content_productAdd">カートに追加</div>
+  
+  
+                </div>
+              </div>
+
+              <div class="modal-content_bottom">
+                <div class="modal-content_productInstructions">
+                  
+                  ※表示金額は税込です。<br>
+                  3Dモデルのダウンロード商品です。<br>
+                  こちらは22-23W/S collection[Quantum foam]のイメージに合わせて制作した新色のveryperiです。<br><br>
+                  
+                  -
+                  
+                  chlomaのリアルウェア『Shelter Coat』を3Dアバターのためのウェアとして再構築。主にソーシャルVR VRChat での使用を想定しています。<br>
+                  MODEL CONVERTED BY ONIGASHIMA.<br><br>
+                  
+                  『Shelter Coat』<br>
+                  すべての脅威から人を守る「シェルター」の名を冠したコート。<br>
+                  強く丸みを帯びた袖のシルエットと、大きく作られた着脱可能なフード、綿が入りぷっくりとした表情のディテールが特徴的。<br>
+                  保温性と軽さに非常に優れ、着用者を優しく守ります。<br><br>
+                  
+                  -
+                  
+                  各データや導入の詳細については以下のドキュメントを参照してください。<br>
+                  [chloma_ShelterCoat_Document.pdf]<br><br>
+                  
+                  ▶スペック<br>
+                  ・ポリゴン数 30,628(三角面)<br>
+                  ・スキニング済<br>
+                  ・フードを被った状態、フードを取り外した状態の差分を同梱<br>
+                  ・各所に設定されたブレンドシェイプによって、好みのバランスに調節可能<br>
+                  ・揺れ物セットアップ済<br><br>
+                  
+                  ▶データ内容<br>
+                  ・UnityPackage<br>
+                  ・Texture(Png) <br>
+                  ・Mesh(Fbx)<br>
+                  ・Blendファイル<br><br>
+                  
+                  ▶試着について<br>
+                  VRChat内に設置されている「chloma Virtual Store in GHOSTCLUB」にて試着することができます。週末不定期に開場。<br>
+                  最新情報ははchloma公式のtwitterアカウントにて。<br><br>
+                  
+                  
+                  ▶注意点<br>
+                  ・UnityPackageを読み込む際は、プロジェクトに予めVRCSDK及びlilToon shaderをインポートしてください。<br>
+                  ・キャラクター及びコーディネートで使用している衣服の3Dモデルは付属いたしません。<br>
+                  ・ご利用のためには専門的な知識が必要となります。ご利用環境を導入するためのサポート等はいたしかねますのでご了承ください。<br><br>
+                  
+                  ▶利用規約<br>
+                  本モデルを購入/利用されるすべてのお客様は、以下の利用規約を読了及び同意したものと致します。<br>
+                  chloma3Dモデル利用規約<br><br>
+                  
+                  
+                  Credit<br>
+                  wear design: chloma<br>
+                  modeling (Shelter Coat): ONIGASHIMA<br>
+                  modeling (Other Clothes): chloma<br>
+                  avatar making: Hikari Naginami (wa-i)<br>
+                
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+
+
+
+
+
       </ul>
       <a href="#" class="more">もっと見る</a>
     </div>
   </section>
-
-  <footer>
+  
+  <footer id="footer">
     <div class="container">
-      <small>(c)bottonstall</small>
+      <small>(c)  ばーちゃるあぱれるブランド</small>
       <div class="sns">
         <ul>
           <li><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -104,6 +1092,6 @@
 
 
 
-  <script src="js/main2.js"></script>
+  <script src="asset/js/main2.js"></script>
 </body>
 </html>
